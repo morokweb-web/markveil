@@ -1,0 +1,44 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+html, body { height: 100%; }
+body { @apply bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 font-serif; }
+
+.h1 { @apply text-4xl sm:text-5xl font-semibold tracking-tight; }
+.h2 { @apply text-2xl sm:text-3xl font-semibold; }
+.h3 { @apply text-lg sm:text-xl font-semibold; }
+.muted { @apply text-neutral-600 dark:text-neutral-400; }
+.section { @apply py-16; }
+.card { @apply rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50; }
+a.btn-ghost, .btn-ghost { @apply inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100/50 dark:hover:bg-neutral-800/50; }
+
+/* Micro interactions */
+a, button { transition: transform .2s ease, opacity .2s ease, background-color .2s ease; }
+a:hover, button:hover { transform: translateY(-1px); }
+
+/* Route fade */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px);} to { opacity: 1; transform: none; } }
+.route-fade { animation: fadeIn .4s ease both; }
+
+/* Intro reveal (home) */
+.reveal-up { animation: fadeIn .6s ease .05s both; }
+.reveal-up-delay { animation: fadeIn .6s ease .20s both; }
+
+/* Ken Burns for hero imagery */
+@keyframes kenburns { 0% { transform: scale(1) translate(0,0);} 100% { transform: scale(1.06) translate(2%,-2%);} }
+.ken-burns { will-change: transform; animation: kenburns 18s ease-in-out infinite alternate; }
+
+/* Services button fly effect */
+@keyframes fly { 0%{transform:translateY(0)} 45%{transform:translateY(-12px)} 55%{transform:translateY(12px)} 100%{transform:translateY(0)} }
+.btn-fly:hover { animation: fly .35s cubic-bezier(.25,.8,.25,1) both; }
+
+/* Service CTA buttons */
+.btn-service { @apply block w-full text-center px-6 py-6 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/60 dark:bg-neutral-900/60 hover:bg-neutral-100/70 dark:hover:bg-neutral-800/70; }
+@layer components {
+  /* Soft translucent panel for text over imagery */
+  .text-panel { @apply bg-white/60 dark:bg-neutral-900/60 backdrop-blur-sm border border-white/20 dark:border-white/10 rounded-2xl shadow-sm; }
+  .text-panel--tight { @apply px-3 py-2; }
+  .text-panel--loose { @apply px-5 py-4; }
+}

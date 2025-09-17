@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none"
+  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="t d">
+  <title id="t">MARKVEIL Contact Flow</title>
+  <desc id="d">Diagram showing enquiry and appointment paths with minimal line-art boxes and arrows.</desc>
+
+  <defs>
+    <style>
+      .box { fill: none; }
+      .muted { opacity: 0.5; }
+    </style>
+  </defs>
+
+  <!-- Enquiry box -->
+  <rect class="box" x="120" y="140" width="420" height="240" rx="24"/>
+  <path d="M160 200h120M160 240h240M160 280h180" class="muted"/>
+  <circle cx="520" cy="140" r="6"/>
+
+  <!-- Appointment box -->
+  <rect class="box" x="660" y="140" width="420" height="240" rx="24"/>
+  <path d="M700 200h120M700 240h240M700 280h180" class="muted"/>
+  <circle cx="660" cy="140" r="6"/>
+
+  <!-- Arrows connecting -->
+  <path d="M540 260C600 260 620 260 660 260"/>
+  <path d="M660 260l-14-10M660 260l-14 10"/>
+
+  <!-- Details under boxes -->
+  <rect class="box" x="120" y="460" width="300" height="160" rx="20"/>
+  <path d="M160 520h220" class="muted"/>
+  <rect class="box" x="420" y="460" width="300" height="160" rx="20"/>
+  <path d="M460 520h220" class="muted"/>
+  <rect class="box" x="720" y="460" width="360" height="160" rx="20"/>
+  <path d="M760 520h280" class="muted"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="t">
+  <title id="t">Analytics</title>
+
+  <path d="M4 19v-6"/>
+  <path d="M10 19V7"/>
+  <path d="M16 19v-10"/>
+  <path d="M2 19h20"/>
+
+</svg>

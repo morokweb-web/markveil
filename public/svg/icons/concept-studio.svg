@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="t">
+  <title id="t">Concept — Studio</title>
+
+  <circle cx="8" cy="8" r="3"/>
+  <path d="M2 18c2-3 6-5 10-5s8 2 10 5"/>
+  <path d="M14 8h8"/>
+
+</svg>
